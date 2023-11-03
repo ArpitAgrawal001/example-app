@@ -9,7 +9,7 @@ function fibonacci($n) {
     }
 }
 
-$n = 10; // Change this value to generate a different number of Fibonacci numbers
+$n = 10; // Change this value to generate a different number of Fibonacci 
 
 echo "Fibonacci Sequence for the first $n numbers: ";
 for ($i = 0; $i < $n; $i++) {
