@@ -18,3 +18,4 @@ class SongsTest extends TestCase
         $response->assertStatus(200);
     }
 }
+

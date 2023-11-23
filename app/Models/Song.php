@@ -9,4 +9,11 @@ class Song extends Model
 {
     protected $fillable=['title', 'artist'];
     use HasFactory;
+
+    public function getTitle() {
+        return $this->title;
+    }
+    public function getArtist() {
+        return $this->artist;
+    }
 }
