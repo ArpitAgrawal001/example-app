@@ -8,7 +8,10 @@ use Illuminate\View\Component;
 
 class Main extends Component
 {
+    //Set title attribute for this component.
     public string $title = "Playlist App";
+    
+    //Set an attribte for pageName.
     public string $pageName;
     /**
      * Create a new component instance.
