@@ -8,6 +8,8 @@ use Illuminate\View\Component;
 
 class Main extends Component
 {
+    public string $title = "Playlist App";
+    public string $pageName;
     /**
      * Create a new component instance.
      */
@@ -21,11 +23,10 @@ class Main extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.layouts.main');
         if($this->pageName){
             $this->title = $this->title.' | '.$this->pageName;
           }
+        return view('components.layouts.main');
     }
-    public string $title = "Playlist App";
-    public string $pageName;
+
 }
